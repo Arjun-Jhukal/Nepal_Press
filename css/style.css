@@ -1,0 +1,1377 @@
+/* @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;700&display=swap'); */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap");
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body {
+  font-family: "Poppins", sans-serif;
+}
+ul,
+li {
+  list-style-type: none;
+}
+a:hover,
+a:focus,
+a,
+a:visited {
+  outline-style: none;
+  text-decoration: none;
+}
+/* utility classes */
+
+.lg-heading {
+  font-size: 60px;
+  font-weight: 700;
+  color: #000;
+  line-height: 1.5;
+}
+.lg-heading:hover {
+  color: #c4161c;
+}
+
+.md-heading {
+  font-size: 28px;
+  color: #fff;
+  font-weight: 700;
+  line-height: 1.5;
+}
+.md-heading:hover {
+  color: #b8b865fc;
+}
+.sm-heading {
+  font-size: 20px;
+  color: #000;
+  font-weight: 600;
+  line-height: 1.5;
+}
+.sm-heading:hover {
+  color: #c4161c;
+}
+.section-title {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.section-title h3 {
+  font-weight: 700;
+}
+.section-title a {
+  transition: all 0.3s ease-in-out;
+  font-weight: 700;
+  text-decoration: none;
+  color: #000;
+  padding: 5px 15px;
+  border-radius: 20px;
+}
+.section-title a:hover {
+  background-color: #4f4f4f;
+  color: #fff;
+}
+.section-title a:hover i {
+  color: #fff;
+}
+.section-title a i {
+  color: #c4161c;
+  padding-left: 5px;
+}
+
+hr {
+  width: 75%;
+}
+
+/* top bar section styling starts here */
+.topbar-wrapper {
+  padding: 15px 0;
+  background-color: #1a1b1a0a;
+}
+.topbar-wrapper .logo img {
+  width: 100%;
+}
+.topbar-wrapper .date {
+  text-align: right;
+  padding-right: 5px;
+}
+.topbar-wrapper .topbar-right {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.topbar-wrapper .topbar-right .first-ad {
+  height: 80px;
+  background: url("../img/ads/ad9.gif");
+  background-repeat: no-repeat;
+  width: 75%;
+}
+
+/* Topbar section styling ends here */
+
+/* menu-bar styling starts here */
+.menu-wrapper {
+  position: sticky;
+  top: -10px;
+  z-index: 101;
+  background-color: #fff;
+}
+.menu-wrapper .nav-items i {
+  color: #c4161c;
+}
+.menu-wrapper ul {
+  padding: 0;
+  margin: 0;
+}
+.menu-wrapper .nav-items {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.menu-wrapper .nav-items li {
+  padding: 15px 0;
+}
+.menu-wrapper .nav-items a {
+  display: inline-block;
+  text-decoration: none;
+  color: #000;
+  font-weight: 600;
+}
+.menu-wrapper .nav-items a:hover {
+  color: #000;
+}
+.menu-wrapper .nav-items .active {
+  border-bottom: 2px solid #c4161c;
+}
+.menu-wrapper .nav-items .active a {
+  color: #c4161c;
+}
+
+.menu-wrapper .nav-items a:hover {
+  color: #c4161c;
+}
+/* drop down menu starts here */
+.dropdown {
+  position: relative;
+}
+.dropdown .dropdown-items {
+  display: none;
+}
+
+.dropdown:hover .dropdown-items {
+  display: inline-block;
+  position: absolute;
+  top: 10px;
+  left: 0;
+  transform: translateY(30px);
+  background-color: #fff;
+  /* box-shadow: 1px 1px 1px  #999; */
+  width: 200px;
+  padding: 15px 0 15px 15px;
+}
+/* drop down menu ends here */
+.search-icon {
+  text-align: right;
+}
+.search-icon button {
+  background-color: #fff;
+  border: none;
+}
+.search-icon i {
+  font-size: 32px;
+}
+
+/* Menu-bar styling ends here */
+
+/* notification icon styling starts here */
+.bell-wrapper {
+  position: fixed;
+  bottom: 20px;
+  right: 20px;
+  background-color: #c4161c;
+  border-radius: 50%;
+  padding: 5px;
+}
+.bell-wrapper i {
+  font-size: 22px;
+  color: #fff;
+  border: #fff;
+  border: 2px solid #fff;
+  border-radius: 50%;
+  padding: 5px;
+}
+/* notification icon styling ends here */
+
+/* timer section starts here */
+.timer-wrapper {
+  background-color: #1a1b1a0a;
+  padding: 10px 0;
+}
+.timer-wrapper .election-timer {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.election-timer a {
+  color: #fff;
+  background-color: #c4161c;
+  border-radius: 25px;
+  text-decoration: none;
+  padding: 10px 30px;
+  font-weight: 700;
+  margin-right: 20px;
+}
+.election-timer a:hover {
+  color: #fff;
+  background-color: #c4161c9f;
+}
+.election-timer p {
+  margin: 0;
+}
+.election-timer .days span {
+  font-size: 30px;
+  color: #c4161c;
+  font-weight: 700;
+  margin-right: 15px;
+}
+.election-timer .days {
+  font-weight: 700;
+}
+/* Timer section ends here */
+
+/* top ads styling starts here */
+.ads .ad1 {
+  height: 100px;
+  background: url(../img/ads/ad6.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ad2 {
+  height: 100px;
+  background: url(../img/ads/ad5.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* top ads styling ends here */
+
+/* banner news starts here */
+.banner-wrapper a {
+  text-decoration: none;
+}
+.banner-wrapper .banner-news {
+  padding: 50px 0 30px;
+  border-bottom: 1px solid #999;
+}
+.banner-wrapper .banner-news .news-title {
+  text-align: center;
+}
+.banner-news .publisher {
+  text-align: center;
+}
+.banner-news .publisher .publisher-image {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: 1px solid #c4161c;
+  margin-right: 15px;
+}
+.banner-news .publisher .publisher-image img {
+  width: 100%;
+  padding: 5px;
+}
+.banner-news .publisher span {
+  font-weight: 700;
+}
+.banner-news .feature-image img {
+  width: 100%;
+}
+.banner-news .news-details p {
+  font-size: 23px;
+  text-align: center;
+  color: #4f4f4f;
+}
+
+/* ad3 and ad 4 styling starts here */
+.ads .ad3 {
+  height: 150px;
+  background: url(../img/ads/ad7.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ad4 {
+  height: 100px;
+  background: url(../img/ads/ad8.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ad3 and ad 4 styling ends here */
+
+/* feature news styling starts here */
+.feature-wrapper a {
+  text-decoration: none;
+}
+.feature-wrapper .feature-hero-news {
+  position: relative;
+  overflow: hidden;
+}
+.feature-wrapper .feature-hero-news .featured-image img {
+  width: 100%;
+  height: 600px;
+  object-fit: cover;
+  transition: transform 0.5s ease-in-out;
+}
+.feature-wrapper .feature-hero-news .featured-image img:hover {
+  transform: scale(1.1);
+}
+.feature-wrapper .feature-hero-news .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 0px;
+  padding: 30px 30px;
+}
+.feature-top-news {
+  position: relative;
+  overflow: hidden;
+}
+
+.feature-top-news .featured-image img {
+  width: 100%;
+  height: 300px;
+  transition: transform 0.5s ease-in-out;
+}
+.feature-top-news .featured-image img:hover {
+  transform: scale(1.1);
+}
+.feature-top-news .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 10px;
+  padding: 0 30px;
+}
+
+.feature-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+}
+.feature-wrapper.feature-news .featured-image {
+  width: 350px;
+  border-radius: 5px;
+}
+.feature-news .featured-image img {
+  width: 100%;
+  height: auto;
+  border-radius: 5px;
+}
+
+/* Feature news styling ends here */
+
+/* ads 5 and ads 6 styling starts here */
+.ads .ad5 {
+  height: 100px;
+  background: url(../img/ads/ad1.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ad6 {
+  height: 100px;
+  background: url(../img/ads/ad2.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 5 and ads 6 styling ends here */
+
+/* political section styling starts here */
+.political-wrapper {
+  padding: 50px 0;
+}
+.political-wrapper a {
+  text-decoration: none;
+}
+.political-wrapper .political-tab {
+  background-color: #c4161c05;
+  display: flex;
+  justify-content: space-evenly;
+  margin: 0;
+  padding: 15px 0;
+  margin-bottom: 30px;
+}
+.political-tab .party {
+  display: flex;
+  align-items: center;
+}
+.political-wrapper .political-tab .party-logo {
+  width: 30px;
+  margin-right: 10px;
+}
+.political-wrapper .political-tab .party-logo img {
+  width: 100%;
+}
+.political-wrapper .political-tab a {
+  color: #000;
+  text-decoration: none;
+  font-weight: 700;
+}
+.political-wrapper .political-tab a:hover {
+  color: #c4161c;
+}
+.political-wrapper .political-tab li span {
+  font-size: 12px;
+}
+.political-wrapper .political-tab li {
+  border-left: 1px solid #999;
+  padding-left: 15px;
+}
+.political-wrapper .political-tab li:nth-child(1) {
+  border-left: none;
+  padding: 0;
+}
+.political-wrapper .politics-hero-news {
+  position: relative;
+}
+.political-wrapper .politics-hero-news .featured-image img {
+  width: 100%;
+  height: 400px;
+}
+.political-wrapper .politics-hero-news .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 0px;
+  padding: 0 15px 15px 15px;
+}
+.political-wrapper .ads {
+  position: sticky;
+  top: 120px;
+}
+
+.political-wrapper .ads .ad7 {
+  height: 250px;
+  background: url(../img/ads/ad11.png);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.political-wrapper .ads .ad8 {
+  height: 250px;
+  background: url(../img/ads/ad10.gif);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.political-wrapper .political-news {
+  display: flex;
+  align-items: center;
+  padding-top: 30px;
+}
+
+.political-wrapper .political-news .featured-image {
+  min-width: 120px;
+}
+.political-wrapper .political-news .featured-image img {
+  width: 100%;
+  height: 120px;
+  border-radius: 5px;
+}
+
+/* Political section styling ends here */
+
+/* ads 7 and ads8 styling starts here */
+.ads .ad7 {
+  height: 100px;
+  background: url(../img/ads/ad3.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ad8 {
+  height: 100px;
+  background: url(../img/ads/ad4.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 7 and ads8 styling ends here */
+
+/* election section styling starts here */
+.election-wrapper {
+  padding: 30px 0;
+}
+.election-wrapper a {
+  text-decoration: none;
+}
+.election-wrapper hr {
+  width: 50%;
+}
+.election-wrapper .section-title span {
+  color: #c4161c;
+}
+.election-wrapper .election-hero-news {
+  position: relative;
+}
+.election-wrapper .election-hero-news .featured-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  object-position: center;
+}
+.election-wrapper .election-hero-news .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 15px 15px;
+}
+.election-top-news {
+  position: relative;
+  margin-bottom: 30px;
+}
+.election-top-news .featured-image img {
+  width: 100%;
+  height: 200px;
+  object-fit: cover;
+  object-position: center;
+}
+.election-top-news .news-content {
+  background: linear-gradient(rgba(0, 0, 0, 0.08), #000);
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 15px 15px;
+}
+.election-top-news .news-content h1.md-heading {
+  font-size: 22px;
+}
+.election-news {
+  border-top: 1px dotted #999;
+  padding: 15px 0;
+}
+/* election section styling ends here */
+/* press section styling starts here */
+
+.press-wrapper a {
+  text-decoration: none;
+}
+.press-wrapper .press-hero-news {
+  position: relative;
+}
+.press-wrapper .press-hero-news .featured-image img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+}
+
+.press-wrapper .press-hero-news .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 15px 15px;
+  text-align: center;
+  width: 100%;
+}
+.press-wrapper .press-news {
+  display: flex;
+  align-items: flex-start;
+  padding-bottom: 25px;
+}
+.press-wrapper .press-news:nth-child(4) {
+  padding-bottom: 0;
+}
+.press-wrapper .press-news .featured-image {
+  min-width: 120px;
+}
+.press-wrapper .press-news .featured-image img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+}
+.press-wrapper .press-news .news-content {
+  padding-left: 15px;
+}
+.press-wrapper .press-featured-news .featured-image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  padding-bottom: 30px;
+}
+.press-wrapper .trending-wrapper {
+  position: sticky;
+  top: 0;
+}
+.press-wrapper .trending-news {
+  display: flex;
+  align-items: flex-start;
+  padding: 30px 0;
+  border-bottom: 1px solid #999;
+}
+.press-wrapper .trending-news:last-child {
+  border-bottom: none;
+}
+.press-wrapper .trending-news .featured-image {
+  min-width: 120px;
+}
+.press-wrapper .trending-news .featured-image img {
+  width: 100%;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+  padding-bottom: 15px;
+}
+
+/* Press section styling ends here */
+
+/* ad 9 styling starts here */
+.ads .ad9 {
+  height: 100px;
+  background: url(../img/ads/ad11.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ad 9 styling ends here */
+
+/* talk section styling starts here */
+
+.talk-wrapper {
+  background-color: #1a1b1a0a;
+  padding: 30px 0;
+}
+.talk-wrapper a {
+  text-decoration: none;
+}
+.talk-wrapper .category {
+  text-align: center;
+}
+.talk-wrapper .category a {
+  display: inline-block;
+  color: #fff;
+  font-size: 20px;
+  background-color: #c4161c;
+  padding: 10px 15px;
+  margin-bottom: 30px;
+  font-weight: 600;
+}
+.talk-wrapper .talk-hero-news {
+  display: flex;
+  justify-content: flex-end;
+  position: relative;
+}
+.talk-wrapper .talk-hero-news .feature-image img {
+  width: 70%;
+  height: 300px;
+  object-fit: cover;
+}
+.talk-wrapper .talk-hero-news .feature-image {
+  width: 40%;
+  position: absolute;
+  left: 100px;
+  top: 70px;
+}
+.talk-wrapper .talk-hero-news .feature-image img {
+  width: 100%;
+}
+.talk-wrapper .talk-hero-news .news-content {
+  width: 60%;
+  height: 450px;
+  background-color: #000;
+  display: flex;
+  align-items: center;
+  padding: 0 50px 0 150px;
+}
+.talk-wrapper .talk-hero-news .news-content .news-title a {
+  display: inline-block;
+}
+.talk-wrapper .talk-hero-news .news-content h1,
+.talk-wrapper .talk-hero-news .news-content .news-description p {
+  color: #fff;
+}
+
+.talk-wrapper .talk-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 30px;
+}
+.talk-wrapper .talk-news .feature-image {
+  min-width: 40%;
+}
+.talk-wrapper .talk-news .feature-image img {
+  width: 100%;
+  height: 150px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+
+.talk-wrapper .talk-aside {
+  border: 1px solid #999;
+}
+.talk-wrapper .talk-aside .news {
+  /* text-align: center; */
+  padding: 30px;
+  border-bottom: 1px solid #999;
+}
+.talk-wrapper .talk-aside .news:last-child {
+  border: none;
+}
+.talk-wrapper .talk-aside .news .writer {
+  display: flex;
+  /* align-items: center; */
+  padding: 15px 0 0;
+}
+.talk-wrapper .talk-aside .news .writer .profile {
+  width: 70px;
+  margin-right: 15px;
+}
+.talk-wrapper .talk-aside .news .writer .profile img {
+  display: block;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  padding: 5px;
+  border: 1px solid #c4161c;
+  object-fit: cover;
+  object-position: center;
+}
+.talk-wrapper .talk-aside .news .writer .writer-details i {
+  color: #999;
+  font-size: 20px;
+}
+.talk-wrapper .talk-aside .news .writer .writer-details a {
+  color: #999;
+  display: block;
+}
+.talk-wrapper .talk-aside .news .writer .writer-details a:hover {
+  color: #c4161c;
+}
+
+/* Talk section styling ends here */
+
+/* blog section styling starts here */
+.blog-wrapper {
+  background-color: #1a1b1a0a;
+  padding: 30px 0 50px;
+}
+.blog-wrapper .blog {
+  margin-top: 30px;
+  background-color: #fff;
+  padding: 15px;
+  height: 180px;
+}
+.blog-wrapper .blog .blog-title a {
+  color: #000;
+  font-size: 20px;
+  font-weight: 600;
+  text-decoration: none;
+}
+.blog-wrapper .blog a:hover {
+  color: #c4161c;
+}
+.blog-wrapper .blog .blog-image img {
+  width: 100px;
+  height: 100px;
+}
+.blog-wrapper .blog .writer-details a {
+  color: #999;
+  text-decoration: none;
+}
+.blog-wrapper .blog .writer-details a:hover {
+  color: #c4161c;
+}
+.blog-wrapper .blog .writer-details i {
+  color: #9999;
+}
+
+/* blog section styling ends here */
+
+/* ads 10 and ad 11 styling starts here */
+.ads .ad10 {
+  height: 100px;
+  background: url(../img/ads/ad12.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.ads .ad11 {
+  height: 100px;
+  background: url(../img/ads/ad13.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 10 and ad 11 styling ends here */
+
+/* social section styling starts her */
+.social-wrapper {
+  padding: 30px 0;
+}
+.social-wrapper a {
+  text-decoration: none;
+}
+.social-wrapper .news {
+  position: relative;
+}
+.social-wrapper .news .featured-image {
+  overflow: hidden;
+}
+.social-wrapper .news .featured-image img {
+  width: 100%;
+  height: 400px;
+  object-fit: cover;
+  transition: transform 0.3s ease-in-out;
+}
+.social-wrapper .news .featured-image img:hover {
+  transform: scale(1.1);
+}
+.social-wrapper .news .news-content {
+  background: linear-gradient(transparent, #000);
+  width: 100%;
+  position: absolute;
+  bottom: 0;
+  padding: 0 15px 15px;
+}
+.social-wrapper .news .news-content a.md-heading {
+  font-size: 20px;
+}
+/* social section styling ends here */
+
+/* ads 12 styling starts here */
+.ads .ad12 {
+  height: 200px;
+  background: url(../img/ads/ad14.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 12 styling ends here */
+
+/* ads 13 styling starts here */
+.ads .ad13 {
+  height: 120px;
+  background: url(../img/ads/ad15.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 13 styling ends here */
+
+/* health section styling starts here */
+.health-wrapper .press-wrapper .press-hero-news .featured-image img {
+  height: 550px;
+}
+.health-wrapper .press-wrapper .election-news .news-content a h1.sm-heading {
+  font-size: 16px;
+}
+.health-wrapper .press-wrapper .press-hero-news h1.md-heading {
+  font-size: 22px;
+}
+.health-wrapper .press-hero-news .featured-image {
+  overflow: hidden;
+}
+.health-wrapper .press-hero-news .featured-image img {
+  transition: transform 0.3s ease-in-out;
+}
+.health-wrapper .press-hero-news .featured-image img:hover {
+  transform: scale(1.1);
+}
+/* Health section styling ends here */
+
+/* ads 14 styling starts here */
+.ads .ad14 {
+  height: 120px;
+  background: url(../img/ads/ad16.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 14 styling ends here */
+
+/* representative section styling starts here */
+.representative-wrapper {
+  padding: 30px 0;
+}
+.representative-wrapper a {
+  text-decoration: none;
+}
+.representative-wrapper .representative-news {
+  padding: 30px;
+  box-shadow: 0 0 2px #999;
+}
+.representative-wrapper .section-title {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.representative-wrapper .section-title hr {
+  width: 38%;
+}
+.representative-wrapper .news .featured-image {
+  position: relative;
+}
+.representative-wrapper .news .featured-image img {
+  width: 100%;
+  height: 200px;
+  padding-bottom: 15px;
+  border-radius: 5px;
+}
+.representative-wrapper .news .category a {
+  color: #fff;
+  background-color: #c4161c;
+  padding: 10px 15px;
+  position: absolute;
+  right: 0;
+  bottom: 15px;
+}
+/* representative section styling ends here */
+
+/* ads 15 styling starts here */
+.ads .ad15 {
+  height: 120px;
+  background: url(../img/ads/ad17.gif);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* ads 15 styling ends here */
+
+/* sussan section styling starts here */
+.section-wrapper {
+  padding: 50px 0;
+}
+.section-wrapper .aside-title .section-title hr {
+  width: 35%;
+}
+.section-wrapper .world-news .news-content a {
+  display: inline-block;
+  font-size: 18px;
+  padding: 15px 0;
+}
+.section-wrapper .trending-news .news-content {
+  padding-left: 15px;
+}
+.section-wrapper .trending-news {
+  border: none;
+  padding: 15px 0;
+}
+
+/* sussan section styling ends here */
+
+/* ads 16 styling starts here */
+.ads .ad16 {
+  height: 90px;
+  background: url(../img/ads/ad18.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/* ads 16 styling ends here */
+
+/* kala section styling starts here */
+.kala-wrapper {
+  padding: 30px 0;
+}
+.kala-wrapper a {
+  text-decoration: none;
+}
+.kala-wrapper .kala-hero-news .featured-image {
+  position: relative;
+}
+.kala-wrapper .kala-hero-news .featured-image img {
+  width: 100%;
+  height: 520px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+.kala-wrapper .kala-hero-news .featured-image .news-content {
+  position: absolute;
+  bottom: 0;
+  background: linear-gradient(transparent, #000);
+  padding: 30px 15px;
+}
+
+.kala-wrapper .kala-news .featured-image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.kala-wrapper .kala-featured-news {
+  border-top: 1px dotted #999;
+  padding: 15px 0;
+}
+.kala-wrapper .kala-featured-news:last-child {
+  padding-bottom: 0;
+}
+.kala-wrapper .kala-featured-news .featured-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.kala-wrapper .kala-final-news .featured-image img {
+  width: 100%;
+  height: 200px;
+  border-radius: 5px;
+  object-fit: cover;
+}
+.kala-wrapper .kala-last-news {
+  padding: 15px 0;
+  border-top: 1px dotted #999;
+}
+/* kala section styling ends here */
+
+/* Video section styling starts here */
+.video-wrapper {
+  background-color: #000;
+  padding: 30px 0;
+  color: #fff;
+}
+.video-wrapper a {
+  text-decoration: none;
+}
+.video-wrapper .section-title a {
+  color: #fff;
+}
+.video-wrapper .video-slider .video {
+  position: relative;
+  overflow: hidden;
+  border-radius: 5px;
+}
+.video-wrapper .video-slider .video .play-btn {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  border: 5px solid #fff;
+  z-index: 11;
+}
+.video-wrapper .video-slider .video .play-btn a {
+  color: #fff;
+  display: inline-block;
+}
+.video-wrapper .video-slider .video .play-btn a:hover {
+  color: #fff;
+}
+.video-wrapper .video-slider .video .play-btn a i {
+  padding: 15px;
+}
+.video-wrapper .video-slider .video img {
+  width: 100%;
+  height: 500px;
+  object-fit: cover;
+  border-radius: 5px;
+  transition: transform 0.3s ease-in-out;
+}
+.video-wrapper .video-slider .video img:hover {
+  transform: scale(1.1);
+}
+.video-wrapper .video-slider .video .news-content {
+  background: linear-gradient(transparent, #000);
+  position: absolute;
+  bottom: 0;
+  padding: 10px;
+}
+
+/* Video section styling ends here */
+
+/* Sports section styling starts here */
+.sports-wrapper {
+  border-bottom: 1px solid #ddd;
+  padding: 30px 0;
+}
+.sports-wrapper a {
+  text-decoration: none;
+  display: inline-block;
+}
+
+.sports-wrapper .hero-news .featured-image img {
+  width: 100%;
+  height: 500px;
+  /* padding-bottom: 15px; */
+  border-radius: 15px;
+  object-fit: cover;
+}
+
+.sports-wrapper .hero-news a {
+  font-size: 28px;
+}
+.sports-wrapper .featured-news .featured-image img {
+  width: 100%;
+  height: 200px;
+}
+.sports-wrapper .featured-news a {
+  font-size: 18px;
+}
+.featured-news .news {
+  display: flex;
+}
+.featured-news .news .featured-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.featured-news .news .news-content {
+  padding-left: 30px;
+}
+.sports-wrapper .block-news hr {
+  width: 40%;
+}
+.sports-wrapper .block-news .news-block {
+  box-shadow: 0 0 5px #ddd;
+  padding: 15px;
+}
+
+.news-block .main-news {
+  display: flex;
+  align-items: center;
+  padding: 15px 0;
+  border-top: 1px dashed #ddd;
+}
+.news-block .main-news .featured-image img {
+  width: 100px;
+  height: 100px;
+  object-fit: cover;
+  border-radius: 5px;
+}
+/* Sports section styling ends here */
+
+/* footer styling starts here */
+.footer-wrapper {
+  padding-top: 30px;
+}
+.footer-wrapper a {
+  text-decoration: none;
+}
+.footer-wrapper .footer-about-wrapper {
+  border-right: 1px solid #ddd;
+  padding-right: 30px;
+}
+.footer-wrapper .footer-title h1 {
+  color: #c4161c;
+  font-size: 22px;
+  font-weight: 600;
+}
+.footer-wrapper .footer-about .contact-details p {
+  color: #999;
+}
+.footer-wrapper .socials {
+  border-bottom: 1px solid #ddd;
+  border-top: 1px solid #ddd;
+  padding: 30px 0;
+}
+.footer-wrapper .socials i {
+  color: #c4161c;
+  font-size: 20px;
+  padding-right: 15px;
+}
+.footer-wrapper .download .devices {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 0;
+}
+.footer-wrapper .download .os img {
+  width: 90%;
+}
+.footer-wrapper .footer-links {
+  padding-left: 15px;
+}
+.footer-wrapper .footer-links .footer-items {
+  margin: 0;
+  padding: 0;
+}
+.footer-wrapper .footer-links .footer-items li {
+  line-height: 1.7;
+}
+.footer-wrapper .footer-links .footer-items a {
+  color: #999;
+}
+.footer-wrapper .footer-links .footer-items a:hover {
+  color: #c4161c;
+}
+.footer-wrapper .team-wrapper {
+  border-left: 1px solid #ddd;
+  padding-left: 30px;
+}
+.footer-wrapper .team {
+  display: flex;
+  justify-content: left;
+  flex-wrap: wrap;
+}
+.footer-wrapper .team .member {
+  width: 31%;
+  padding-right: 25px;
+  padding-bottom: 30px;
+}
+.footer-wrapper .team .member:nth-child(3) {
+  padding-right: 0;
+}
+.footer-wrapper .team .member h5 {
+  font-weight: 600;
+}
+.footer-wrapper .team .member p {
+  color: #999;
+}
+.footer-wrapper .all-btn {
+  display: inline-block;
+  background-color: #c4161c;
+  color: #fff;
+  border-radius: 15px;
+  padding: 10px 30px;
+  text-transform: uppercase;
+  font-weight: 600;
+}
+.footer-wrapper .all-btn:hover {
+  background-color: #000;
+}
+
+.footer-wrapper .promotion {
+  background-color: #000;
+  color: #fff;
+  border-radius: 15px;
+  padding: 15px 15px 15px 30px;
+  display: flex;
+  align-items: center;
+}
+.footer-wrapper .promotion h4 {
+  font-size: 22px;
+  color: #fff;
+  padding-right: 30px;
+  border-right: 1px solid #ddd;
+}
+.footer-wrapper .promotion h4:hover {
+  color: #fff;
+}
+.footer-wrapper .promotion .promo-details h5 {
+  font-size: 16px;
+}
+.copy-right-wrapper {
+  background-color: #1a1b1a0a;
+  margin-top: 15px;
+}
+.copy-right-wrapper p {
+  color: #999;
+  margin-bottom: 0;
+  padding: 15px 0;
+}
+/* footer styling ends here */
+
+/* listing page styling starts here */
+.page-wrapper .section-title {
+  justify-content: flex-start;
+}
+.page-wrapper .section-title .title {
+  padding-right: 30px;
+}
+.page-wrapper .section-title hr {
+  width: 80%;
+}
+.page-wrapper .hero-news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #000;
+}
+.page-wrapper .hero-news .featured-image {
+  width: 60%;
+}
+.page-wrapper .hero-news .featured-image img {
+  width: 100%;
+  height: 450px;
+  object-fit: cover;
+}
+.page-wrapper .hero-news .news-content {
+  width: 40%;
+  padding: 0 30px;
+  color: #fff;
+}
+.page-wrapper .hero-news .news-content .date {
+  padding: 15px 0;
+  color: #999;
+}
+.page-wrapper .hero-news .news-content .news-details p {
+  overflow: ellipse;
+}
+.page-wrapper .news-wrapper .news {
+  box-shadow: 0 0 2px #ddd;
+  padding: 15px;
+  margin-bottom: 30px;
+}
+.page-wrapper .news-wrapper .news .featured-image img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+.page-wrapper .trending-news {
+  position: sticky;
+  top: 120px;
+}
+.page-wrapper .trending-news .news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+.page-wrapper .trending-news .news .featured-image {
+  order: 2;
+}
+.page-wrapper .trending-news .news .featured-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+/* listing Page styling ends here */
+
+/* Details page styling starts here */
+.update-news .section-title hr {
+  width: 30%;
+}
+.update-news .news {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 0;
+  border-bottom: 1px solid #ddd;
+}
+.update-news .news .featured-image {
+  order: 2;
+}
+.update-news .news .featured-image img {
+  width: 100px;
+  height: 100px;
+  border-radius: 5px;
+}
+.page-wrapper .news-wrapper .section-title hr {
+  width: 70%;
+}
+.page-wrapper .category span {
+  background-color: #c4161c;
+  color: #fff;
+  padding: 15px;
+}
+.page-wrapper .detail-page-title p {
+  color: #999;
+  font-size: 20px;
+}
+.page-wrapper .writer-wrapper {
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+  padding: 15px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.page-wrapper .writer-wrapper .writer img {
+  width: 50px;
+  height: 50px;
+  border: 1px solid #c4161c;
+  border-radius: 50%;
+  margin-right: 15px;
+}
+.page-wrapper .writer-wrapper .share span {
+  font-size: 18px;
+  font-weight: 600;
+}
+.page-wrapper .writer-wrapper .share i {
+  color: #fff;
+  padding: 15px;
+  background-color: #c4161c;
+}
+/* Details page styling ends here */
