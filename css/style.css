@@ -1373,5 +1373,62 @@ hr {
   color: #fff;
   padding: 15px;
   background-color: #c4161c;
+  transition: all 0.3s ease-in-out;
+}
+.page-wrapper .writer-wrapper .share i:hover {
+  transform: translateY(-10px);
+}
+.page-wrapper .news-expand .featured-image img {
+  width: 100%;
+}
+.page-wrapper .news-expand p {
+  color: #000;
+  font-size: 18px;
+  line-height: 1.7;
+  font-weight: 400;
+  padding: 15px 0;
+}
+.page-wrapper .news-expand .react-icons {
+  text-align: center;
+}
+.page-wrapper .news-expand .react-icons i {
+  color: #000;
+  /* background-color: yellow; */
+  font-size: 32px;
+  padding: 0 15px;
+}
+.page-wrapper .news-expand .react-icons i:hover {
+  color: #f0f028;
+  transform: scale(1.1);
+}
+.comment-form form {
+  background-color: #ddd;
+  padding: 30px;
+}
+.comment-form form label {
+  display: block;
+}
+.comment-form form textarea {
+  width: 100%;
+  margin: 15px 0;
+  outline: none;
+  padding: 15px;
+  border: none;
+}
+.comment-form form input {
+  outline: none;
+  width: 100%;
+  padding: 5px;
+  margin: 5px 0;
+  border: none;
+}
+.comment-form form button {
+  border: none;
+  outline: none;
+  background-color: #c4161c;
+  padding: 5px 15px;
+  color: #fff;
+  text-transform: uppercase;
+  margin-top: 15px;
 }
 /* Details page styling ends here */
